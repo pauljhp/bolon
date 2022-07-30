@@ -93,23 +93,23 @@ else:
                 if current_page >= cur_p:
                     cur_p += 1
                     if choice20 == choice20_options.get(0):
-                        st.write("Sure, let's do something exceiting. How about something you've always wanted?")
-                        st.write("Find Bolon for assistance and show him the following QR code (click next):\n")
+                        st.text("Sure, let's do something exceiting. How about something you've always wanted?")
+                        st.markdown("Find Bolon for assistance and show him the following QR code `(click next)`:\n")
                         if session_state.page_number >= cur_p:
                             img_path = make_qrcode(f"exciting mode",
                                 save_path="./data/qrcode.png")
                             st.image(img_path)
-                            st.text("Also dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
+                            st.markdown("Also dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
                     elif choice20 == choice20_options.get(1):
                         st.write("Sure, let's do something quirky. \n")
-                        text = st.text_input(label="Do you have something you want to say to Bolon? Type it in here, the hit next:\n")
+                        text = st.text_input(label="Do you have something you want to say to Bolon? Type it in here, then hit next:\n")
                         if session_state.page_number >= cur_p:
                             st.markdown("""Show the following QR code to Bolon and he'll know what to do.
                             \(Of course, don't show him the message, or else, what's the fun?\)""")
                             img_path = make_qrcode(f"quirky mode: \n____message____\n{text}",
                                 save_path="./data/qrcode.png")
                             st.image(img_path)
-                            st.text("Also dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
+                            st.markdown("Also dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
 
                     elif choice20 == choice20_options.get(2):
                         session_state.page_number = 0
@@ -171,7 +171,7 @@ else:
                                 )
                     else:
                         st.text(ending_text)
-                        st.text("Dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
+                        st.markdown("Dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
         
         elif choice1 == choice1_options.get(3):
             st.markdown("Ok! Got to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
