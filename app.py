@@ -174,5 +174,5 @@ else:
                         st.markdown("Dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
         
         elif choice1 == choice1_options.get(3):
-            st.markdown("Ok! Got to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
+            st.markdown("Ok! Got to [this link](https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md) for you Bolon coupons")
         else: raise NotImplementedError

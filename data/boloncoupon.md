@@ -4,7 +4,7 @@ This gives you unimaginable previlage. Use it wisely.
 
 Show the following QR code to bolon.
 
-![image]("https://github.com/pauljhp/bolon/blob/master/data/qrcode.png")
+![image](https://github.com/pauljhp/bolon/blob/master/data/qrcode.png)
 
 ## The following options are available
 
