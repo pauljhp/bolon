@@ -99,7 +99,7 @@ else:
                             img_path = make_qrcode(f"exciting mode",
                                 save_path="./data/qrcode.png")
                             st.image(img_path)
-
+                            st.text("Also dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
                     elif choice20 == choice20_options.get(1):
                         st.write("Sure, let's do something quirky. \n")
                         text = st.text_input(label="Do you have something you want to say to Bolon? Type it in here, the hit next:\n")
@@ -109,6 +109,7 @@ else:
                             img_path = make_qrcode(f"quirky mode: \n____message____\n{text}",
                                 save_path="./data/qrcode.png")
                             st.image(img_path)
+                            st.text("Also dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
 
                     elif choice20 == choice20_options.get(2):
                         session_state.page_number = 0
@@ -126,7 +127,7 @@ else:
                 """,
                 width=300, height=500)
                 st.text("Click Next for more")
-                print("moved to", session_state.page_number)
+                # print("moved to", session_state.page_number)
             elif session_state.page_number - cur_p>= len(video_urls) - 1:
                 choice21_options = {
                     0: "That's it? You suck!",
@@ -170,6 +171,7 @@ else:
                                 )
                     else:
                         st.text(ending_text)
+                        st.text("Dont forget to go to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
         
         elif choice1 == choice1_options.get(3):
             st.markdown("Ok! Got to [this link]('https://github.com/pauljhp/bolon/blob/master/data/boloncoupon.md') for you Bolon coupons")
